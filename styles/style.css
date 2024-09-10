@@ -16,7 +16,10 @@
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-background:#eee;
+	--color-background:#ffffff;
+	--color-orange: #FF6E0C;
+	--color-pink: #F20C90;
+
 }
 
 
