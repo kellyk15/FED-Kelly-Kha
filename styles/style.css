@@ -32,3 +32,44 @@
 
 /* jouw code */
 
+@font-face {
+	font-family: 'Nunito-Black';
+	src: url('../fonts/Nunito-Black.woff2') format('woff2'),
+		 url('../fonts/Nunito-Black.woff') format('woff'),
+		 url('../fonts/Nunito-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-display: swap;
+	font-style: normal;
+  }
+
+*{
+	margin: 0;
+}
+body{
+	font-family: 'Nunito-Black', Times New Roman ;
+	color:var(--color-orange);
+}
+
+main{
+	padding: 1.5em;
+}
+
+h1{
+	font-size:3.5em;
+	font-weight: 900;
+}
+
+header > a img {
+	height: 2em;
+	width: 8.5em;
+}
+
+header{
+	/* height: 4.3em; */
+	/* background-color: #F20C90; */
+}
+
+img{
+	max-width: 20em;
+	max-height: 22em;
+}
