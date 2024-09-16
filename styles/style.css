@@ -87,7 +87,7 @@ header{
 } */
 
 header nav{
-	background-color: #F20C90;
+	background-color: var(--color-background);
 	position: fixed;
 	left:0;
 	right: 0;
@@ -98,12 +98,28 @@ header nav{
 	transition: 1s;
 }
 
+header nav ul {
+	display: flex;
+	flex-direction: column;
+	gap: 0.7em;
+	padding: 2em;
+	font-size: 2em;
+	list-style: none;
+	text-align: center;
+	
+}
+
+header nav a{
+	text-decoration: none;
+	color: #512D00;
+}
+
 header > button{
 	background-color: #F950AD;
 	border: none;
 	color: white;
-	border-radius: 10px;
-	padding: 0.5em;
+	border-radius: 50px;
+	padding: 1em;
 	
 	text-decoration: none;
 	display: inline-block;
@@ -111,7 +127,7 @@ header > button{
 
 header nav.toonMenu {
 	translate: 0% 0%;
-	
+	z-index: 2;
   }
 
 section{

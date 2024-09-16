@@ -1,5 +1,5 @@
 // JavaScript Document
-var openButton = document.querySelector("header > button");
+var openButton = document.querySelector("header button:nth-of-type(2)");
 // openButton.onclick = openMenu;
 
 openButton.addEventListener('click',openMenu)
