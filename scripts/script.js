@@ -7,7 +7,8 @@ openButton.addEventListener('click',openMenu)
 function openMenu (){
     var deNav = document.querySelector("header nav");
     deNav.classList.toggle("toonMenu");
-
+    var deLi = document.querySelector("header ul li");
+    deLi.classList.toggle("toonMenu");
 }
 
 // var sluitButton = document.querySelector("header > button");
