@@ -95,7 +95,9 @@ header nav{
 	bottom: 0;
 	
 	translate: 0% 100%;
-	transition: 0.5s;
+	transition: 1.5s;
+	transition-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);
+	
 }
 
 header nav ul {
@@ -417,12 +419,85 @@ nav + section:nth-of-type(1) img{
 
 /* css voor de 2e pagina */
 
-.blog section:nth-of-type(1){
+.blog main section:nth-of-type(1){
 	background-color: var(--color-pink);
 	margin: -1.3em;
 	border-radius: 0px;
 	padding-top: 5em;
 	height: 30em;
+	display: grid;
+	gap: 0.5em;
+}
+
+.blog main section:nth-of-type(1) h1{
+	font-size: 4em;
 }
 
 /* gebruik grid */
+
+.blog input{
+	border-radius: 50px;
+	background-color: var(--color-pink);
+	border-color: var(--color-background);
+	border-width: 4px;
+	height: 2.6em;
+}
+
+.blog select{
+	border-radius: 50px;
+	background-color: var(--color-background);
+	border-color: var(--color-background);
+	border-width: 4px;
+	height: 2.6em;
+	color: var(--color-pink);
+	font-weight: bold;
+	padding: 3px 10px;
+}
+
+.blog section:nth-of-type(2){
+	display: grid;
+	gap: 1em;
+	background-color: var(--color-background);
+	color: #512D00;
+	padding: 0;
+	margin-top: 2em;
+}
+
+.blog section:nth-of-type(2) img{
+	object-fit: cover;
+	height: 15em;
+}
+
+.blog article{
+	width: 20.8em;
+	border-radius: 10px;
+
+	display: flex;
+	flex-direction: column;
+	padding: 1.1em;
+	border: solid #E6E6E6;
+	border-width: 0.3em;
+	gap: 1em;
+	background-color: var(--color-background);
+
+}
+
+.blog article button{
+	width: fit-content;
+	border-radius: 50px;
+	font-size: 0.8em;
+	padding: 0.5em 1.5em;
+}
+
+.blog article:nth-of-type(3) button{
+	background-color: #FF9E1B;
+}
+
+.blog article:nth-of-type(4) button{
+	background-color: var(--color-orange);
+}
+
+.blog input{
+	border: solid var(--color-background);
+	border-width: 0.3em;
+}
