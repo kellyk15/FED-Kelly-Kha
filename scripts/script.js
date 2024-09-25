@@ -11,6 +11,19 @@ function openMenu (){
     // deLi.classList.toggle("toonMenu");
 }
 
+
+
+
+
+var headervlak = document.querySelector("header div");
+
+headervlak.addEventListener('click',laadscherm)
+
+function laadscherm (){
+    headervlak.classList.add("begin");
+}
+
+
 // var openMenu = true
 
 // function openMenu(){
