@@ -99,9 +99,6 @@ header div{
 	align-items: center;
 }
 
-header div h1{
-	color: var(--color-background);
-}
 
 @keyframes begin-animatie {
 	0%{
@@ -113,7 +110,23 @@ header div h1{
 	}
 }
 
-/* @keyframes begin-text {
+@keyframes begin-text {
+	0%{
+		opacity: 0%;
+		scale: 0%;
+	}
+
+	75%{
+		scale: 115%;
+	}
+
+	100%{
+		opacity: 100%;
+		scale: 100%;
+	}
+}
+
+@keyframes eind-text{
 	0%{
 		opacity: 100%;
 		scale: 100%;
@@ -121,16 +134,90 @@ header div h1{
 
 	100%{
 		opacity: 0%;
-		scale: 10%;
+		scale: 0%;
 	}
-} */
-    
+
+
+}
+
+
 header div.begin{
-	animation-name: begin-animatie, begin-text;
-	animation-duration: 3s;
-	animation-delay: 0s,1s;
+	animation-name: begin-animatie;
+	animation-duration: 0.6s;
+	animation-delay: 2.3s;
 	animation-fill-mode: forwards;
 }
+
+/* header div.begin h2 {
+	animation-name: begin-text, eind-text;
+	animation-duration: 2s,2s;
+	animation-delay: 0s,2.5s;
+
+	animation-fill-mode: forwards;
+} */
+
+
+/* header div h2{
+	color: var(--color-background);
+	font-size: 4em;
+	opacity: 0%;
+}
+
+header div.begin h2{
+	display: inline-block;
+	animation-name: begin-text;
+	animation-duration: 2s;
+
+	animation-fill-mode: forwards;
+} */
+
+
+header div span{
+	color: var(--color-background);
+	font-size: 2em;
+	opacity: 0%;
+}
+
+header div.begin span{
+	display: inline-block;
+	animation-name: begin-text;
+	animation-duration: 0.8s;
+
+	animation-fill-mode: forwards;
+}
+
+header div.begin span:nth-of-type(2){
+	animation-delay: 0.15s;
+}
+
+header div.begin span:nth-of-type(3){
+	animation-delay: 0.30s;
+}
+
+header div.begin span:nth-of-type(4){
+	animation-delay: 0.45s;
+}
+
+header div.begin span:nth-of-type(5){
+	animation-delay: 0.6s;
+}
+
+
+header div.begin h2{
+	animation-name: eind-text;
+	animation-duration: 1s;
+	animation-delay: 1.4s;
+
+	animation-fill-mode: forwards;
+}
+
+
+
+/* header div.begin h2 span:nth-of-type(1){
+	animation-delay: 2s;
+	color: #111;
+} */
+
 
 /* ????????????? */
 
@@ -200,6 +287,10 @@ header > button{
 	
 	text-decoration: none;
 	display: inline-block;
+}
+
+header button:first-of-type{
+	opacity: 0%;
 }
 
 header nav.toonMenu {
