@@ -1,23 +1,37 @@
 // JavaScript Document
 var openButton = document.querySelector("header button:nth-of-type(2)");
-// openButton.onclick = openMenu;
 
 openButton.addEventListener('click',openMenu)
 
+// function openMenu (){
+//     var deNav = document.querySelector("header nav");
+//     deNav.classList.toggle("toonMenu");
+// }
+
+var openButton = "true"
+
 function openMenu (){
     var deNav = document.querySelector("header nav");
-    deNav.classList.toggle("toonMenu");
-    // var deLi = document.querySelector("header ul li");
-    // deLi.classList.toggle("toonMenu");
+    var deKnop = document.querySelector ("header button:nth-of-type(2)");
+
+
+    if (openButton == "true") {
+        deNav.classList.add("toonMenu");
+        openButton = "false"
+        deKnop.classList.add("toonMenu")
+    }
+    else {
+        deNav.classList.remove("toonMenu");
+        openButton = "true"  
+        deKnop.classList.remove("toonMenu")
+    }
 }
-
-
 
 
 
 var headervlak = document.querySelector("header div");
 
-headervlak.addEventListener('click',laadscherm)
+headervlak.addEventListener('click', laadscherm)
 
 function laadscherm (){
     headervlak.classList.add("begin");

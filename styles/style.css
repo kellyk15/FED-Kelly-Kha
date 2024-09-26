@@ -43,8 +43,6 @@
 	font-style: normal;
   }
 
-/* fallbackfont */
-
 *{
 	margin: 0;
 	max-width: 375px;
@@ -143,8 +141,6 @@ header div img{
 		opacity: 0%;
 		scale: 0%;
 	}
-
-
 }
 
 
@@ -183,6 +179,7 @@ header div span{
 	color: var(--color-background);
 	font-size: 2em;
 	opacity: 0%;
+	margin-right: -.1em ;
 }
 
 header div.begin span{
@@ -240,7 +237,6 @@ header nav{
 	translate: 0% 100%;
 	transition: 1.5s;
 	transition-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);
-	
 }
 
 header nav ul {
@@ -286,46 +282,46 @@ header li:nth-of-type(5){
 }
 
 
-/* header > button{
-	background-color: #F950AD;
-	border: none;
-	color: white;
-	border-radius: 50px;
+header button:nth-of-type(2){
 	padding: 1em;
-	
-	text-decoration: none;
-	display: inline-block;
-} */
-
-header > button{
-	padding: 1em;
-	background-color: var(--color-pink);
+	background-color: #E6E6E6;
 	border: none;
-	color: white;
-	width: 5em;
-	height: 2em;
+	width: 4em;
+	height: 2.5em;
 
 	display:grid;
 	place-items:center;
 	border-radius:50px;
 }
 
-header > button span{
+header button:nth-of-type(2) span{
 	grid-row-start:1;
 	grid-column-start:1;
 	width:1.2em;
-	height:.2em;
-	background-color:var(--color-background);
+	height:.1em;
+	background-color:var(--color-text);
 	transition-duration:.5s;
 	z-index: 3;
 }
 
-header > button span:nth-last-of-type(1){
+header button:nth-of-type(2) span:nth-last-of-type(1){
 	transform:translateY(-.4em);
 }
 
-header > button span:nth-last-of-type(3){
+header button:nth-of-type(2) span:nth-last-of-type(3){
 	transform:translateY(.4em);
+}
+
+header button.toonMenu:nth-of-type(2) span:nth-of-type(1) {
+	transform:rotate(45deg) scalex(1.25);
+}
+
+header button.toonMenu:nth-of-type(2) span:nth-of-type(2) {
+	opacity: 0%;
+}
+
+header button.toonMenu:nth-of-type(2) span:nth-of-type(3) {
+	transform:rotate(-45deg) scalex(1.25);
 }
 
 
