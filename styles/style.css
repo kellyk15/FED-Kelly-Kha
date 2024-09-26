@@ -93,10 +93,17 @@ header div{
 	right: 0;
 	top: 0;
 	bottom: 0;
+	z-index: 5;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
+}
+
+header div img{
+	position: absolute;
+	bottom: -78px;
 }
 
 
@@ -106,7 +113,7 @@ header div{
 	}
 	
 	100%{
-	  translate: 0% -100%;
+	  translate: 0% -110%;
 	}
 }
 
@@ -224,6 +231,7 @@ header div.begin h2{
 header nav{
 	background-color: var(--color-background);
 	position: fixed;
+	
 	left:0;
 	right: 0;
 	top: 4em;
@@ -278,7 +286,7 @@ header li:nth-of-type(5){
 }
 
 
-header > button{
+/* header > button{
 	background-color: #F950AD;
 	border: none;
 	color: white;
@@ -287,7 +295,39 @@ header > button{
 	
 	text-decoration: none;
 	display: inline-block;
+} */
+
+header > button{
+	padding: 1em;
+	background-color: var(--color-pink);
+	border: none;
+	color: white;
+	width: 5em;
+	height: 2em;
+
+	display:grid;
+	place-items:center;
+	border-radius:50px;
 }
+
+header > button span{
+	grid-row-start:1;
+	grid-column-start:1;
+	width:1.2em;
+	height:.2em;
+	background-color:var(--color-background);
+	transition-duration:.5s;
+	z-index: 3;
+}
+
+header > button span:nth-last-of-type(1){
+	transform:translateY(-.4em);
+}
+
+header > button span:nth-last-of-type(3){
+	transform:translateY(.4em);
+}
+
 
 header button:first-of-type{
 	opacity: 0%;
