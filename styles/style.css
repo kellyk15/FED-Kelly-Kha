@@ -102,7 +102,7 @@ header div img{
 }
 
 
-
+/* animaties */
 @keyframes begin-animatie {
 	0%{
 	  translate: 0% 0%;
@@ -217,6 +217,7 @@ header nav a{
 	color: #512D00;
 }
 
+/* navigatie css */
 header nav{
 	/* background-color: var(--color-background); */
 	position: fixed;
@@ -358,11 +359,42 @@ section:first-of-type h2{
 	line-height: 0.9em;
 }
 
-section:first-of-type img{
+main section:first-of-type img{
 	height: 23em;
 	width: 11em;
-	align-items: center	;
+	z-index: 1;
 }
+
+/* animatie koffie */
+
+@keyframes koffie-hover{
+	0%{
+		opacity: 0%;
+	}
+
+	40%{
+		opacity: 100%;
+	}
+	100%{
+		translate: 50% 0%;
+		opacity: 100%;	
+	}
+	
+}
+
+main section:first-of-type img:nth-of-type(2){
+	position: relative;
+	top: -23em;
+	z-index: 1;
+	opacity: 0%;
+}
+
+main section:first-of-type img:nth-of-type(2):hover{
+	animation-name: koffie-hover;
+	animation-duration: 0.6s;
+	animation-fill-mode: forwards;
+}
+
 
 section:nth-of-type(2){
 	background-color: var(--color-pink);
@@ -390,6 +422,7 @@ section:nth-of-type(2) button{
 	font-weight: 800;
 }
 
+/* hover van de bestelknopjes met hapjes erin */
 section:nth-of-type(2) button:hover{
 	background-color: #ffffff;
 	color: var(--color-pink);
@@ -535,6 +568,7 @@ section:nth-of-type(5) button{
 	width: 100%;
 }
 
+/* footer css */
 footer{
 	height: 30em;
 	background-color:var(--color-orange);
