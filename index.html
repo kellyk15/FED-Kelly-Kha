@@ -17,23 +17,24 @@
 
     <header>
 		<div> 
-			<h2>
+			<h1>
 				<span>D</span>
 				<span>N</span>
 				<span>K</span>
 				<span>N</span>
 				<span>'</span>
-			</h2>
+			</h1>
 
 			<img src="images/loading-scherm.svg" alt=""> 
 		</div>
 		
-		<button>Taal</button>
-		<a href="#">
+		<button aria-hidden="true">Taal</button>
+
+		<a aria-label="logo dunkin" href="blog.html">
 			<img src="images/logo-dnkn.svg" alt="home logo"/>
 		  </a>
 		
-		<button>
+		<button aria-label="home button">
 			<span></span>
 			<span></span>
 			<span></span>
@@ -43,10 +44,10 @@
 			<img src="images/menu-balk.png" alt="">
 			<ul>
 				<li><a href="blog.html">STOREFINDER </a></li>
-				<li><a href="#">JOBS </a></li>
-				<li><a href="#">BLOG </a></li>
-				<li><a href="#">MORE > </a></li>
-				<li><a href="#">BESTELLEN </a></li>
+				<li><a href="blog.html">JOBS </a></li>
+				<li><a href="blog.html">BLOG </a></li>
+				<li><a href="blog.html">MORE > </a></li>
+				<li><a href="blog.html">BESTELLEN </a></li>
 			</ul>
 		</nav>
 
@@ -57,39 +58,43 @@
 
 	<main>
 		<section>
-			<h1>WE LOVE COFFEE</h1>
+			<h2>WE LOVE COFFEE</h2>
 			<img src="images/dnkn-coffee.png" alt="glas met koffie en schuim erboven op"/>
 		</section>
 
 		<section>
-			<h1>BESTEL!</h1>
+			<h2>BESTEL!</h2>
 			<p>Maak een keuze:</p>
 			<div>
-				<button>
-					BEZORGEN
-				</button>
+				<a href="blog.html">
+					<button aria-label="naar bezorgen">
+						BEZORGEN
+					</button>
+				</a>
 
-				<button>
-					AFHALEN
-				</button>
+				<a href="blog.html">
+					<button>
+						AFHALEN
+					</button>
+				</a>
 			</div>
 		</section>
 
 		<section>
-			<h1>NIEUW!</h1>
+			<h2>NIEUW!</2>
 			<img src="images/gluten-donuts.png" alt="4 verschillende donuts met een tekstje erbij waarop gluten free staat">
 		</section>
 
 		<section>
-			<h1>BESTEL</h1>
-			<h1>DUNKIN'</h1>
-			<h1>ONLINE</h1>
+			<h3>BESTEL</h3>
+			<h3>DUNKIN'</h3>
+			<h3>ONLINE</h3>
 			
 			<article>
 				<img src="images/1-icon.svg" alt="">
 
 				<div>
-					<h2>1. VUL JE POSTCODE IN</h2>
+					<h4>1. VUL JE POSTCODE IN</h4>
 					<p>Zoek jij een store in de buurt? Gebruik de Dunkin' Storefinder.</p>
 				</div>
 			</article>
@@ -98,25 +103,28 @@
 				<img src="images/2-icon.svg" alt="">
 
 				<div>
-					<h2>2. PLAATS JE BESTELLING</h2>
+					<h4>2. PLAATS JE BESTELLING</h4>
 					<p>Kies uit meer dan 200 verschillende donut smaken. Welke kies jij?</p>
 				</div>
 			</article>
 
 			<article>
 				<img src="images/3-icon.svg" alt="">
-				<h2>3. ONTVANG JE BESTELLING</h2>
+				<h4>3. ONTVANG JE BESTELLING</h4>
 			</article>
 
-
-			<button>ORDER NOW</button>
+			<a href="blog.html" aria-label="naar bestellen">
+				<button>ORDER NOW</button>
+			</a>
 		</section>
+
+
 		<section>
 			<article>
 				<img src="images/blogimg.png" alt="4 verschillende donuts">
-				<h3>Dunkin Start Met Glutenvrije Donuts</h3>
+				<h4>Dunkin Start Met Glutenvrije Donuts</h4>
 				<p>Dunkin Start Met Glutenvrije Donuts</p>
-				<button>LEES MEER</button>
+				<button aria-label="lees meer over glutenvrije donuts">LEES MEER</button>
 			</article>
 		</section>
 	</main>
@@ -125,10 +133,10 @@
 	<footer>
 		<nav>
 			<ul>
-				<li><a href="blog.html">STOREFINDER </a></li>
-				<li><a href="#">JOBS </a></li>
-				<li><a href="#">BLOG </a></li>
-				<li><a href="#">OVER DUNKIN' </a></li>
+				<li><a href="blog.html" aria-label="naar storefinder">STOREFINDER </a></li>
+				<li><a href="blog.html" aria-label="naar jobs">JOBS </a></li>
+				<li><a href="blog.html" aria-label="naar blog">BLOG </a></li>
+				<li><a href="blog.html" aria-label="naar meer over dunkin">OVER DUNKIN' </a></li>
 			</ul>
 		</nav>
 
@@ -139,7 +147,7 @@
 		</section>
 
 		<div>
-			<button>ORDER NOW</button>
+			<button aria-label="naar bestellen">ORDER NOW</button>
 		</div>
 	</footer>
 

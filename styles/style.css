@@ -61,7 +61,7 @@ main{
 	background-color: var(--color-background);
 }
 
-h1{
+h2{
 	font-size:3.5em;
 	font-weight: 900;
 }
@@ -144,6 +144,18 @@ header div img{
 	}
 }
 
+@keyframes scaling-hover{
+	0%{
+		scale: 100%;
+	}
+	
+	100%{
+		scale: 95%
+	}
+}
+
+
+/* animatie voor loading screen vgm */
 
 header div.begin{
 	animation-name: begin-animatie;
@@ -151,29 +163,6 @@ header div.begin{
 	animation-delay: 2.3s;
 	animation-fill-mode: forwards;
 }
-
-/* header div.begin h2 {
-	animation-name: begin-text, eind-text;
-	animation-duration: 2s,2s;
-	animation-delay: 0s,2.5s;
-
-	animation-fill-mode: forwards;
-} */
-
-
-/* header div h2{
-	color: var(--color-background);
-	font-size: 4em;
-	opacity: 0%;
-}
-
-header div.begin h2{
-	display: inline-block;
-	animation-name: begin-text;
-	animation-duration: 2s;
-
-	animation-fill-mode: forwards;
-} */
 
 
 header div span{
@@ -208,7 +197,7 @@ header div.begin span:nth-of-type(5){
 }
 
 
-header div.begin h2{
+header div.begin h1{
 	animation-name: eind-text;
 	animation-duration: 1s;
 	animation-delay: 1.4s;
@@ -216,15 +205,16 @@ header div.begin h2{
 	animation-fill-mode: forwards;
 }
 
+/* einde voor animatie loading screen */
 
+/* animatie voor scaling */
 
-/* header div.begin h2 span:nth-of-type(1){
-	animation-delay: 2s;
-	color: #111;
-} */
+.homepage section:hover:nth-of-type(1), .homepage section:hover:nth-of-type(2),section:hover:nth-of-type(3), article:hover:nth-of-type(1), article:hover:nth-of-type(2),article:hover:nth-of-type(3), article:hover:nth-of-type(4), button:hover{
+	animation-name: scaling-hover;
+	animation-duration: 0.6s;
+	animation-fill-mode: forwards;
+}
 
-
-/* ????????????? */
 header nav a{
 	text-decoration: none;
 	color: #512D00;
@@ -269,36 +259,6 @@ header nav.toonMenu ul li{
 }
 
 
-/* @keyframes nav-text{
-	0%{
-		opacity: 0%;
-		scale: 0%;
-	}
-
-	75%{
-		scale: 115%;
-	}
-
-	100%{
-		opacity: 100%;
-		scale: 100%;
-	}
-}
-@keyframes nav-text-eind{
-	0%{
-		opacity: 100%;
-		scale: 100%;
-	}
-
-	25%{
-		scale: 115%;
-	}
-
-	100%{
-		opacity: 0%;
-		scale: 0%;
-	}
-} */
 
 header ul li{
 	opacity: 0%;
@@ -337,6 +297,7 @@ header button:nth-of-type(2){
 	display:grid;
 	place-items:center;
 	border-radius:50px;
+	z-index: 2;
 }
 
 header button:nth-of-type(2) span{
@@ -394,7 +355,7 @@ section:first-of-type{
 
 }
 
-section:first-of-type h1{
+section:first-of-type h2{
 	font-size: 49px;
 	text-align: center;
 	line-height: 0.9em;
@@ -454,7 +415,7 @@ section:nth-of-type(3){
 
 section:nth-of-type(3) img{
 	width: 22em;
-	height: 26em;
+	
 }
 
 section:nth-of-type(4){
@@ -463,12 +424,13 @@ section:nth-of-type(4){
 	gap: 1em;
 }
 
-section:nth-of-type(4) h1:nth-of-type(1), section:nth-of-type(4) h1:nth-of-type(3){
+section:nth-of-type(4) h3:nth-of-type(1), section:nth-of-type(4) h3:nth-of-type(3){
 	color: var(--color-pink);
 }
 
-section:nth-of-type(4) h1{
-	margin-top: -0.8em;
+section:nth-of-type(4) h3{
+	margin-top: -0.6em;
+	font-size: 4em;
 }
 
 section:nth-of-type(4) img {
@@ -494,7 +456,7 @@ section:nth-of-type(4) article{
 	line-height: 1.3em;
 }
 
-section:nth-of-type(4) article h2{
+section:nth-of-type(4) article h4{
 	font-size: 1.3em;
 	color: var(--color-pink);
 }
@@ -532,7 +494,7 @@ section:nth-of-type(5) article img{
 	border-radius: 25px;
 }
 
-section:nth-of-type(5) article h3{
+section:nth-of-type(5) article h4{
 	font-size: 2.2em;
 }
 
@@ -640,7 +602,7 @@ nav + section:nth-of-type(1) img{
 	background-color: var(--color-pink);
 	margin: -1.3em;
 	border-radius: 0px;
-	padding-top: 5em;
+	padding-top: 4em;
 	height: 30em;
 	display: grid;
 	gap: 0.5em;
@@ -650,7 +612,9 @@ nav + section:nth-of-type(1) img{
 	font-size: 4em;
 }
 
-/* gebruik grid */
+.blog h1 {
+	text-align: center;
+}
 
 .blog input{
 	border-radius: 50px;
@@ -660,6 +624,9 @@ nav + section:nth-of-type(1) img{
 	height: 2.6em;
 }
 
+.blog h2{
+	font-size: 1.5em;
+}
 .blog select{
 	border-radius: 50px;
 	background-color: var(--color-background);
@@ -717,4 +684,78 @@ nav + section:nth-of-type(1) img{
 .blog input{
 	border: solid var(--color-background);
 	border-width: 0.3em;
+}
+
+
+/* focus states */
+
+section button:focus{
+	outline: none;
+	background-color: var(--color-background);
+	color: var(--color-pink);
+}
+section:nth-of-type(4) button:focus, section:nth-of-type(5) button:focus{
+	background-color: var(--color-background);
+	color: var(--color-orange);
+	outline: solid 0.4em;
+	outline-color: var(--color-pink);
+}
+
+header a:focus{
+	outline: none;
+	color: var(--color-orange);
+}
+
+footer a:focus{
+	background-color: var(--color-background);
+	color: var(--color-orange);
+	outline: none;
+}
+
+footer button:focus{
+	outline: solid 0.4em;
+	outline-color: var(--color-pink);
+}
+
+.blog input:focus{
+	background-color: var(--color-background);
+	outline: solid 0.2em var(--color-text);
+}
+
+.blog select :focus{
+	outline: solid 0.2em var(--color-text);
+}
+
+.blog button:focus{
+	outline: solid 0.2em var(--color-pink);
+	color: var(--color-pink);
+	background-color: var(--color-background);
+}
+.blog article:nth-of-type(4)button:focus{
+	outline: solid 0.2em var(--color-pink);
+	color: var(--color-orange);
+	background-color: var(--color-background);
+}
+
+
+/* hover states */
+section:nth-of-type(4) button:hover, section:nth-of-type(5) button:hover, footer button:hover{
+	background-color: #E6E6E6;
+	color: var(--color-orange);
+	outline: solid 0.2em var(--color-orange);
+}
+
+header a:hover{
+	color: var(--color-orange);
+}
+
+footer a:hover{
+	background-color: var(--color-background);
+	color: var(--color-orange);
+}
+
+/* active states */
+
+button:active{
+	border: solid 0.2em var(--color-text);
 }
