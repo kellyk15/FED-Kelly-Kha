@@ -221,7 +221,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. Vermeld de bronnen ook in je code.
 
   1. https://css-tricks.com/html-inputs-and-labels-a-love-story/
-  2. bron 2
-  3. ...
+  2. https://codepen.io/shooft/pen/JjQLVeB
+  3. https://codepen.io/shooft/pen/VwJXNEg
 
 </details>
