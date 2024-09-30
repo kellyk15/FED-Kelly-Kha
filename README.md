@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/sketch-1.png" width="375px" alt="De homepagina van dunkin donuts ">
+  <img src="readme-images/homepagina.png" width="375px" alt="De homepagina van dunkin donuts ">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/sketch-2.png" width="375px" alt="Dit is de blog pagina van dunkin donuts">
+  <img src="readme-images/blogpagina.png" width="375px" alt="Dit is de blog pagina van dunkin donuts">
  
 </details>
 
@@ -57,7 +57,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-
+  - Ze maken geen gebruik van li's 
+  - Ze maken geen gebruik van buttons
+  - Ze gebruiken geen alt
+  - Ze gebruiken geen h2's alleen maar h1
+  - Bij koppelingen zeggen ze soms alleen maar koppeling, maar niet waarnaartoe
 
 </details>
 
@@ -90,10 +94,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  
+  Ik had nog alleen maar mijn html, maar opzich ging dat wel goed. Ik had alleen een vraag over hoe het werkt met de bewegende images
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+  <img src = "readme-images/week1.jpg" width= 375px alt = "voortgang week 1">
 
 
   ### Verslag van meeting
@@ -101,7 +105,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   - Het is beter om op click te doen voor deze opdracht in plaats van on load, volgens de student assistent is on load te veel werk voor de tijd die we hebben
 
-  - 
 
 </details>
 
@@ -117,9 +120,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Voor deze week liep ik vast bij het maken van de animaties bij mijn button, want ik wilde dat er "hapjes" in kwamen. Ook liep ik vast bij hoe het zat met transition delays voor mijn menu.
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+  En als laatste lukte het me niet om mijn footer fixed te hebben aan de onderkant. 
+
+  <img src = "readme-images/week2.png" width= 375px alt = "voortgang week 3">
 
 
   ### Verslag van meeting
@@ -145,6 +150,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  - Ik was dus vergeten dat er maar 1 keer een h1 per pagina kon, dus dat moet ik nog aanpassen
+  - Verder heb ik wel gebruik gemaakt van li's en buttons
+  - Ook had ik al null alts en gebruikte alts waar het nodig is
+
 </details>
 
 
@@ -159,9 +168,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Ik heb nog moeite met het gebruik van aria's. Ik wist niet helemaal zeker waar je ze moest gebruiken en ook hoe labels in elkaar zitten. Verder in mijn screenreader leest het alle menu items ook voor zonder dat het menu opent.
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+
+  <img src = "readme-images/week3.png" width= 375px alt = "voortgang week 4">
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -182,19 +192,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src = "readme-images/eindfoto-2.png" width= 375px alt = "uitkomst van opdracht">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik ben echt trots op hoe de laadscherm is gelukt. Dit heb ik met animatie gedaan in css. Hierdoor heb ik echt veel geleerd over hoe animaties werken, maar ook hoe je elke individuele letter kan animeren met behulp van
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src = "readme-images/eindfoto-1.png" width= 375px alt = "dit ging goed">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Een van de dingen die mij niet gelukt was, was dat als de screenreader het voorleest dat het de items in de menu niet voorleest/wel voorleest en het menu opent. Ik heb focus within geprobeerd, maar ik snapte het niet zo heel goed waardoor het niet is gelukt. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src = "readme-images/eindfoto.png" width= 375px alt = "dit was niet gelukt :(">
 </details>
 
 
